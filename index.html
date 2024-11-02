@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinderland - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column; 
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 110%;
+            background-image: url('happy.png'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1; 
+        }
+
+        .header, main, footer {
+            position: relative;
+            z-index: 2; 
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+            .header a {
+                color: black;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 18px;
+                border-radius: 4px;
+            }
+
+                .header a.logo img {
+                    width: 250px;
+                    height: auto;
+                }
+
+                .header a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .header a.active {
+                    background-color: lightpink;
+                    color: black;
+                }
+
+        main {
+            text-align: center;
+            margin-top: 50px;
+            color: black;
+            flex: 1; 
+        }
+
+        h1 {
+            font-size: 48px; 
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
+        }
+
+        .tagline {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 60px; 
+            color: #ffeb3b;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 1); 
+            margin: 20px 0;
+            text-align: left; 
+            width: 80%; 
+            margin-left: auto;
+            margin-right: auto; 
+            letter-spacing: 2px; 
+        }
+
+        .description {
+            text-align: left; 
+            font-size: 24px; 
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+            line-height: 1.5; 
+            margin: 10px auto; 
+            width: 80%; 
+        }
+
+        .highlight {
+            color: #ffeb3b; 
+            font-weight: bold; 
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <div class="header">
+        <a href="index.html" class="logo">
+            <img src="kind.png" alt="Kinderland Logo">
+        </a>
+        <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="flashcards.html">Flashcards</a>
+            <a href="download.html">Download</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <p class="tagline">SCAN and LEARN</p>
+        <h1 class="description">
+            Download the <span class="highlight">KINDERLAND APP</span> and unlock a world of learning!<br>
+            Scan to discover and interact with alphabets, numbers, shapes, and colors.<br>
+            Perfect for young explorers eager to learn through 3D Augmented Reality!
+        </h1>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kinderland. All rights reserved.</p>
+    </footer>
+</body>
+</html>
