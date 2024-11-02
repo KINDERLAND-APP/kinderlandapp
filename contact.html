@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinderland - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #c6ffb3;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+            .header a {
+                color: black;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 18px;
+                border-radius: 4px;
+            }
+
+                .header a.logo img {
+                    width: 250px;
+                    height: auto;
+                }
+
+                .header a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .header a.active {
+                    background-color: lightpink;
+                    color: white;
+                }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 20px;
+            gap: 20px;
+        }
+
+        .section {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 1000px;
+            width: 100%; 
+        }
+
+        .team-members {
+            display: flex; 
+            justify-content: center; 
+            gap: 40px; 
+            margin-bottom: 100px; 
+        }
+
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px;
+            background-color: floralwhite;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+            .team-member img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
+
+        
+        footer {
+            padding: 10px;
+            text-align: center;
+            color: black;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">
+            <img src="kind.png" alt="Kinderland Logo">
+        </a>
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="flashcards.html">Flashcards</a>
+            <a href="download.html">Download</a>
+            <a class="active" href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <header>
+    </header>
+
+    <main>
+        <!-- Team Section -->
+        <h3>Meet Our Team</h3>
+
+        <div class="team-members">
+            <div class="team-member">
+                <img src="randel.jpg" alt="Team Member 1">
+                <h4>Jon Randel Cortez</h4>
+            </div>
+            <div class="team-member">
+                <img src="abby.jpg" alt="Team Member 2">
+                <h4>Abigail Gazzingan</h4>
+            </div>
+            <div class="team-member">
+                <img src="exequiel.jpg" alt="Team Member 3">
+                <h4>Exequiel Mamerto</h4>
+            </div>
+            <div class="team-member">
+                <img src="masmila.jpg" alt="Team Member 4">
+                <h4>Cathrina Masmila</h4>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kinderland. All rights reserved.</p>
+    </footer>
+</body>
+</html>
