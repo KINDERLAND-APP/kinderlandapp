@@ -1,0 +1,4 @@
+User-agent 
+Disallow
+
+Sitemap httpskinderland-app.github.iokinderlandappsitemap.xml
